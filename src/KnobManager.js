@@ -17,7 +17,7 @@ const knobValuesFromUrl = Object.entries(getQueryParams()).reduce((acc, [k, v]) 
 }, {});
 
 // This is used by _mayCallChannel to determine how long to wait to before triggering a panel update
-const PANEL_UPDATE_INTERVAL = 400;
+const PANEL_UPDATE_INTERVAL = 4;
 
 const escapeStrings = obj => {
   if (typeof obj === 'string') {

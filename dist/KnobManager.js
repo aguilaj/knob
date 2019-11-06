@@ -89,7 +89,7 @@ var knobValuesFromUrl = Object.entries((0, _clientApi.getQueryParams)()).reduce(
   return acc;
 }, {}); // This is used by _mayCallChannel to determine how long to wait to before triggering a panel update
 
-var PANEL_UPDATE_INTERVAL = 400;
+var PANEL_UPDATE_INTERVAL = 4;
 
 var escapeStrings = function escapeStrings(obj) {
   if (typeof obj === 'string') {
