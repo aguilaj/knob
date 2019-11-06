@@ -27,6 +27,7 @@ var _exportNames = {
   select: true,
   radios: true,
   array: true,
+  arrayObject: true,
   date: true,
   button: true,
   files: true,
@@ -42,6 +43,7 @@ exports.object = object;
 exports.select = select;
 exports.radios = radios;
 exports.array = array;
+exports.arrayObject = arrayObject;
 exports.date = date;
 exports.button = button;
 exports.files = files;
@@ -146,6 +148,14 @@ function array(name, value) {
     type: 'array',
     value: value,
     separator: separator,
+    groupId: groupId
+  });
+}
+
+function arrayObject(name, value, groupId) {
+  return _registerKnobs.manager.knob(name, {
+    type: 'arrayObject',
+    value: value,
     groupId: groupId
   });
 }

@@ -60,6 +60,10 @@ export function array(name, value, separator = ',', groupId) {
   return manager.knob(name, { type: 'array', value, separator, groupId });
 }
 
+export function arrayObject(name, value, groupId) {
+  return manager.knob(name, { type: 'arrayObject', value, groupId });
+}
+
 export function date(name, value = new Date(), groupId) {
   const proxyValue = value ? value.getTime() : null;
   return manager.knob(name, { type: 'date', value: proxyValue, groupId });

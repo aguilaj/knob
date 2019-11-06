@@ -6,6 +6,7 @@ import ObjectType from './Object';
 import SelectType from './Select';
 import RadiosType from './Radio';
 import ArrayType from './Array';
+import ArrayObjectType from './ArrayObject';
 import DateType from './Date';
 import ButtonType from './Button';
 import FilesType from './Files';
@@ -20,6 +21,7 @@ export default {
   select: SelectType,
   radios: RadiosType,
   array: ArrayType,
+  arrayObject: ArrayObjectType,
   date: DateType,
   button: ButtonType,
   files: FilesType,

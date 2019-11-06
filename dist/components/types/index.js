@@ -23,6 +23,8 @@ var _Radio = _interopRequireDefault(require("./Radio"));
 
 var _Array = _interopRequireDefault(require("./Array"));
 
+var _ArrayObject = _interopRequireDefault(require("./ArrayObject"));
+
 var _Date = _interopRequireDefault(require("./Date"));
 
 var _Button = _interopRequireDefault(require("./Button"));
@@ -42,6 +44,7 @@ var _default = {
   select: _Select["default"],
   radios: _Radio["default"],
   array: _Array["default"],
+  arrayObject: _ArrayObject["default"],
   date: _Date["default"],
   button: _Button["default"],
   files: _Files["default"],
